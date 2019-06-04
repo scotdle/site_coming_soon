@@ -1,6 +1,8 @@
 import React from "react"
 
- export default props =>
-   <h1 className="nameHeader">{props.headerText}</h1>
+ const headerText = props =>
+   <h1 className="nameHeader">{props.textInHeader}</h1>
 
 
+
+export default headerText
