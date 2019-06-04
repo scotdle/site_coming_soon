@@ -1,12 +1,39 @@
 @import url("https://use.typekit.net/vpd3vih.css");
 
+
 .container, .row {
  height: 100vh;
 }
+.carousel, .item, .active, .carousel-item-next {
+height: 100vh;
+}
+.carousel-inner {
+ height:100%;
+ backface-visibility: visible;
+}
+
 
 .nameHeader {
  font-family: futura-pt-bold, sans-serif;
- font-style: normal;
- font-weight: 300;
+ font-weight: 700;
+ font-style: italic;
+ font-size: 10vw;
+
+}
+
+.first_slide {
+
+ background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+
+}
+.second_slide {
+
+ background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+
+}
+
+.third_slide {
+
+ background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
 
 }

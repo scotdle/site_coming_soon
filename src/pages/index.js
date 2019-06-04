@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from 'gatsby'
-import Header from "../components/header.js"
+import Header from "../components/header"
+import HeaderSubtext from "../components/header_subtext"
 import "../styles/styles.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Img from "gatsby-image"
@@ -14,14 +15,16 @@ export default (props) =>
     <div className="container-fluid">
       <Row>
         <Col md={6}>
-          <Img fluid={props.data.siteLogo.childImageSharp.fluid} />
+          <Img fixed={props.data.siteLogo.childImageSharp.fixed} />
+          <Header textInHeader='Scott "Scooter" Caudle'/>
+          <HeaderSubtext comingSoon= "hello"/>
 
-          <Header headerText='Scott "Scooter" Caudle'/>
         </Col>
-        < Col md={6} className="flex-grow">
+        <Col md={6} className="flex-grow">
 
           <Row>
             <Col md={12}>
+
               <Carousel>
                 <Carousel.Item className="first_slide">
 
@@ -55,8 +58,8 @@ export const pageQuery = graphql`
   query {
     siteLogo: file(relativePath: { eq: "sclogo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 200, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 100, height: 100) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
