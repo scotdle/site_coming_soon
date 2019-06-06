@@ -21,6 +21,19 @@ height: 100vh;
 
 }
 
+.descriptionHeader {
+ font-family: futura-pt-condensed, sans-serif;
+font-weight: 400;
+ font-size: 4vw;
+
+
+}
+
+.slideshow {
+ font-family: futura-pt-bold, sans-serif;
+
+
+}
 .first_slide {
 
  background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
@@ -34,6 +47,32 @@ height: 100vh;
 
 .third_slide {
 
- background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+ background-image: url("../../static/images/merlefest_collage.jpg");
+
+
+}
+
+.carouselcaption {
+
+ background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.faIcon {
+
+ font-size: 5em;
+ padding: 10px;
+ color: white;
+
+
+}
+.atcicon{
+
+ height: 4em;
+ width: 4em;
+ vertical-align: -0.125em;
+ padding: 10px;
+
+
 
 }
