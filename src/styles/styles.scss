@@ -4,6 +4,7 @@
 .container, .row {
  height: 100vh;
 }
+
 .carousel, .item, .active, .carousel-item-next {
 height: 100vh;
 }
@@ -36,18 +37,34 @@ font-weight: 400;
 }
 .first_slide {
 
- background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+ background-image: url(../../static/images/music_background.png);
+background-position: center;
+ background-size: cover;
+
+
+
 
 }
 .second_slide {
 
- background-image: url(https://mdbootstrap.com/img/Photos/Others/background.jpg);
+ background-image: url(../../static/images/design_develop_background.png);
+ background-position: center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-color: black;
 
+}
+
+.carousel_text_black{
+
+color: black;
 }
 
 .third_slide {
 
  background-image: url("../../static/images/merlefest_collage.jpg");
+ background-position: center;
+ background-size: cover;
 
 
 }

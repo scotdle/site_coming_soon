@@ -2,16 +2,15 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Header from "../components/header/header.js"
 import ScootersCarousel from "../components/carousel/carousel.js"
-
 import "../styles/styles.scss"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Img from "gatsby-image"
-import { Row, Col } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
 
 
 export default (props) =>
   (
-    <div className="container-fluid">
+<Container fluid='true' className = "p-0">
       <Row>
         <Col md={6}>
 
@@ -31,7 +30,7 @@ export default (props) =>
           </Row>
         </Col>
       </Row>
-    </div>
+</Container>
   );
 export const pageQuery = graphql`
   query {
