@@ -15,7 +15,7 @@ export default (props) =>
         <Col md={6}>
 
           <Img fixed={props.data.siteLogo.childImageSharp.fixed} />
-          <Header textInHeader='Scott Caudle' comingSoon= "site coming soon..in the meantime, be sure to check out the slideshow!"/>
+          <Header textInHeader='Scott "Scooter" Caudle' comingSoon= "site coming soon..in the meantime, be sure to check out the slideshow!"/>
 
         </Col>
 
